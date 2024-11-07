@@ -1,0 +1,41 @@
+GET http://localhost:3000/tasks
+
+###
+
+GET http://localhost:3000/tasks/6672b66f0ff8708e5c9e4
+
+###
+
+GET http://localhost:3000/tasks?sort=oldest&count=2
+
+###
+
+
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title" : "감동이 뚱땡이",
+  "description" : "똥싸기",
+  "isComplete" : true
+}
+
+###
+
+
+PATCH http://localhost:3000/tasks/672cc2db77095603095756e7
+Content-Type: application/json
+
+
+{
+  "title": "몽고디비공부중!",
+  "description": "공부하기",
+  "isComplete": true
+}
+
+###
+
+
+DELETE http://localhost:3000/tasks/672cc2c74afffe284875b313
+
+###
