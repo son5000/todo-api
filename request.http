@@ -1,16 +1,15 @@
 GET http://localhost:3000/tasks
 
-###
 
+###
 GET http://localhost:3000/tasks/6672b66f0ff8708e5c9e4
 
-###
 
+###
 GET http://localhost:3000/tasks?sort=oldest&count=2
 
+
 ###
-
-
 POST http://localhost:3000/tasks
 Content-Type: application/json
 
@@ -20,12 +19,10 @@ Content-Type: application/json
   "isComplete" : true
 }
 
+
 ###
-
-
 PATCH http://localhost:3000/tasks/672cc2db77095603095756e7
 Content-Type: application/json
-
 
 {
   "title": "몽고디비공부중!",
@@ -33,9 +30,6 @@ Content-Type: application/json
   "isComplete": true
 }
 
+
 ###
-
-
 DELETE http://localhost:3000/tasks/672cc2c74afffe284875b313
-
-###
